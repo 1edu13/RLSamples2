@@ -134,7 +134,7 @@ def main():
     plt.legend()
     plt.grid(axis='y', alpha=0.2)
     
-    grafica_path = os.path.join(target_dir, "evaluacion_limpia_final.png")
+    grafica_path = os.path.join(target_dir, "evaluacion_limpia_final_2.png")
     plt.savefig(grafica_path, format="png", bbox_inches='tight', dpi=300)
     
     print(f"\n[ÉXITO EXTREMO] Rendimiento comprobado. Los 4 cerebros son exitosos.")

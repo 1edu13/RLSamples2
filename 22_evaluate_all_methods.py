@@ -178,8 +178,8 @@ def main():
     run_name = sys.argv[1]
     base_dir = os.path.join("Torneo_Maestro", run_name)
     models_dir = os.path.join(base_dir, "models")
-    video_dir = os.path.join(base_dir, "videos_evaluacion")
-    graficas_dir = os.path.join(base_dir, "graficas_finales")
+    video_dir = os.path.join(base_dir, "videos_evaluacion_2(TD3_Veloz)")
+    graficas_dir = os.path.join(base_dir, "graficas_finales_2(TD3_Veloz)")
     
     os.makedirs(video_dir, exist_ok=True)
     os.makedirs(graficas_dir, exist_ok=True)
@@ -191,7 +191,7 @@ def main():
     # Diccionario de campeones que el script 21 debe haber dejado
     agentes_modelos = {
         "DQN": os.path.join(models_dir, "best_DQN.pth"),
-        "TD3": os.path.join(models_dir, "best_TD3.pth"),
+        "TD3": os.path.join(models_dir, "best_actor_TD3_Veloz.pth"),
         "SAC": os.path.join(models_dir, "best_SAC.pth"),
         "PPO": os.path.join(models_dir, "best_PPO.pth")
     }

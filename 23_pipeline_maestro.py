@@ -7,7 +7,7 @@ def main():
     print("\n" + "█"*70)
     print(" 🏆 INICIANDO PIPELINE MAESTRO DEL GRAN TORNEO: (DQN vs TD3 vs SAC vs PPO) ")
     print("█"*70)
-    
+
     # Marcador de tiempo inamovible para este torneo especifico
     run_name = f"Torneo_Final_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
     
@@ -28,7 +28,7 @@ def main():
     print(f"\n[Fase 2/2] 🎬 INVOCANDO EL TRIBUNAL CLÍNICO (Gráficas Severas y Generador .MP4)")
     print(" > Examinando mentes estáticas y produciendo el film...")
     print("-" * 70)
-    
+
     cmd_eval = [sys.executable, "22_evaluate_all_methods.py", run_name]
     try:
         subprocess.run(cmd_eval, check=True)
